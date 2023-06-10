@@ -1,0 +1,24 @@
+#eventos {
+  display: grid;
+  grid-template-areas:
+    '. titulo .'
+    'card card card';
+  grid-template-rows: auto 2fr;
+  width: 100%;
+  justify-content: stretch;
+  gap: 10px;
+}
+
+#eventos h2 {
+  grid-area: 'titulo';
+  height: min-content;
+  grid-column: 1/4;
+  text-align: center;
+}
+
+.card-evento {
+  grid-area: 'card';
+
+  width: 100%;
+  background: lightgray;
+}
