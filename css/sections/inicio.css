@@ -1,13 +1,17 @@
 #logo {
   border-radius: 100%;
   background: lightgray;
-  width: min(50vw, 200px);
-  height: min(50vw, 200px);
+  width: min(50vw, 300px);
+  height: min(50vw, 300px);
+  background-image: url('../../static/santo/SantoAntonio.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 #frase {
   font-family: Cinzel, serif;
   padding: 15px;
+  font-size: 1.3rem;
 }
 
 #inicio {
@@ -31,4 +35,5 @@
   border-radius: 5px;
   background: white;
   outline: 0.1px solid #cecece;
+  font-size: 1.2rem;
 }

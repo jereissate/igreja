@@ -7,6 +7,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   backdrop-filter: blur(15px);
+  z-index: 1001;
   gap: 15px;
 }
 
@@ -25,6 +26,7 @@ nav {
   text-align: center;
   border-radius: 5px;
   outline: 0.1px solid #cecece;
+  font-size: 1.25rem;
 }
 
 .secao {
