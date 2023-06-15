@@ -1,24 +1,37 @@
 #eventos {
   display: grid;
-  grid-template-areas:
-    '. titulo .'
-    'card card card';
-  grid-template-rows: auto 2fr;
+  grid-template-rows: auto 1fr;
   width: 100%;
-  justify-content: stretch;
+  justify-content: center;
+  justify-items: center;
   gap: 10px;
 }
 
 #eventos h2 {
-  grid-area: 'titulo';
   height: min-content;
-  grid-column: 1/4;
   text-align: center;
 }
 
 .card-evento {
-  grid-area: 'card';
+  width: clamp(450px, 100%, 900px);
+  outline: 1px solid lightgray;
+}
 
+.card-evento img {
   width: 100%;
-  background: lightgray;
+}
+
+.card-evento #texto-sopao {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.card-evento #texto-sopao h3 {
+  margin: 0;
+}
+
+.card-evento span {
+  text-align: center;
 }
