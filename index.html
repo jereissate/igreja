@@ -42,15 +42,15 @@
 <body>
   <main>
     <nav>
-      <button id="menu" active="0">
+      <button id="menu" class="botao" active="0">
         <span class="material-symbols-outlined">menu</span>
       </button>
 
-      <a class="link-navbar" link="inicio">Início</a>
-      <a class="link-navbar" link="localizacao">Localização</a>
-      <a class="link-navbar" link="eventos">Eventos</a>
-      <a class="link-navbar" link="galeria">Galeria</a>
-      <a class="link-navbar" link="doar">Doações</a>
+      <a class="link-navbar botao" link="inicio">Início</a>
+      <a class="link-navbar botao" link="localizacao">Localização</a>
+      <a class="link-navbar botao" link="eventos">Eventos</a>
+      <a class="link-navbar botao" link="galeria">Galeria</a>
+      <a class="link-navbar botao" link="doar">Doações</a>
     </nav>
 
     <div class="secao" id="inicio">
@@ -59,7 +59,7 @@
       <span id="frase">
         <div id="dailyVersesWrapper"></div>
       </span>
-      <button id="botao-nova-frase">Nova frase</button>
+      <button id="botao-nova-frase" class="botao">Nova frase</button>
     </div>
 
     <div class="secao" id="localizacao">
@@ -67,7 +67,11 @@
       <div id="endereco">
         <div id="map"></div>
 
-        <div id="texto-endereco">
+        <div id="texto-endereco" class="botao">
+          <section id="dropdown-endereco" active="0">
+            <span class="material-symbols-outlined">arrow_drop_down</span>
+            <h4>Endereço</h4>
+          </section>
           <span>Rua Parambu</span>
           <span>Nº 560</span>
           <span>Bairro: Vila Velha</span>
@@ -76,7 +80,11 @@
           <span>CEP: 60347-780</span>
         </div>
 
-        <div id="lista-horarios">
+        <div id="lista-horarios" class="botao">
+          <section id="dropdown-horario" active="0">
+            <span class="material-symbols-outlined">arrow_drop_down</span>
+            <h4>Horários</h4>
+          </section>
           <div class="card-horario">
             <span>Domingo:</span>
             <span>Fechado</span>
@@ -115,13 +123,13 @@
         <div id="texto-sopao">
           <h3>Sopão da comunidade Santo Antônio</h3>
           <p>Junte-se a nós para compartilhar amor, solidariedade e uma refeição quente no nosso evento especial de
-            Sopão da Comunidade!
+          Sopão da Comunidade!
           </p>
           <p>Venha fortalecer a fé enquanto servimos a todos, acolhendo corações famintos e alimentando
-            esperanças.</p>
+          esperanças.</p>
           <p>Todos são bem-vindos, pois é na união que encontramos a bênção da partilha. Não perca essa oportunidade de
-            fazer a diferença e nutrir o corpo e a alma. Esperamos
-            você com um sorriso caloroso e uma tigela cheia de amor.</p>
+          fazer a diferença e nutrir o corpo e a alma. Esperamos
+          você com um sorriso caloroso e uma tigela cheia de amor.</p>
           <span>"Ocorre em todo último sábado do mês"</span>
         </div>
       </div>

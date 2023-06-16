@@ -11,10 +11,21 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, span, a, button, p {
+:root {
+  --COR_FUNDO: #A3846F;
+  --COR_BOTAO: #A3663E;
+  --COR_SECAO: #56361D;
+  --COR_CONTAINER: #A3663E;
+}
+
+h1, h2, h3, h4, span, a, button, p {
   font-family: Kanit;
 }
 
 main {
-  /* background-color: #ffd6a8; */
+  background-color: var(--COR_FUNDO);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }

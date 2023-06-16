@@ -2,36 +2,51 @@ nav {
   position: sticky;
   top: 0;
   left: 0;
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  backdrop-filter: blur(15px);
-  z-index: 1001;
+  z-index: 1002;
+  justify-content: center;
   gap: 15px;
+  background-color: var(--COR_FUNDO);
 }
 
 #menu {
+  color: white;
   display: none;
   width: min-content;
   border: none;
   background: transparent;
   cursor: pointer;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: var(--COR_BOTAO);
 }
 
 .link-navbar {
-  background: white;
   padding: 15px;
   cursor: pointer;
   text-align: center;
-  border-radius: 5px;
-  outline: 0.1px solid #cecece;
+  border-radius: 15px;
   font-size: 1.25rem;
 }
 
+.botao {
+  background: var(--COR_BOTAO);
+  color: white;
+  transition: transform 250ms, box-shadow 250ms;
+}
+
+.botao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
 .secao {
-  min-height: 100vh;
-  padding: 15px;
+  /* min-height: 100vh; */
+  padding: 25px;
+  border-radius: 25px;
+  background-color: var(--COR_SECAO);
   scroll-behavior: smooth;
   display: flex;
   justify-content: center;
@@ -46,7 +61,7 @@ nav {
   }
 
   #menu {
-    display: block;
+    display: flex;
   }
 
   #menu[active='0'] ~ .link-navbar {
@@ -54,6 +69,8 @@ nav {
   }
 
   #menu[active='1'] ~ .link-navbar {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

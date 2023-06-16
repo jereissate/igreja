@@ -1,8 +1,12 @@
 const iconeMenu = document.querySelector('#menu');
+const dropdownEndereco = document.querySelector('#dropdown-endereco');
+const dropdownHorario = document.querySelector('#dropdown-horario');
 
-function mudarMenu() {
-  const menuAberto = Number(iconeMenu.getAttribute('active'));
-  iconeMenu.setAttribute('active', Number(!menuAberto));
+function alternarDropdown(elemento) {
+  const elementoAberto = Number(elemento.getAttribute('active'));
+  elemento.setAttribute('active', Number(!elementoAberto));
 }
 
-iconeMenu.onclick = mudarMenu;
+iconeMenu.onclick = () => alternarDropdown(iconeMenu)
+dropdownEndereco.onclick = () => alternarDropdown(dropdownEndereco)
+dropdownHorario.onclick = () => alternarDropdown(dropdownHorario)
