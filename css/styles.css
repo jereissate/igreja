@@ -22,6 +22,10 @@ h1, h2, h3, h4, span, a, button, p {
   font-family: Kanit;
 }
 
+a, a:visited {
+  color: cornflowerblue;
+}
+
 main {
   background-color: var(--COR_FUNDO);
   padding: 15px;
